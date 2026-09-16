@@ -3175,6 +3175,263 @@
                         </li>
 
                         <li>
-                            <a href="experiences.html">
+                        <a href="experiences.html">
+                            Experiences
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Members
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="membership.html">
+                            Membership
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="member/login.html">
+                            Member Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="member/register.html">
+                            Create Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                ©
+                <span id="year"></span>
+                Crossdresser's Desires East Rand.
+                All rights reserved.
+
+            </p>
+
+
+            <div class="footer-meta">
+
+                <span>18+</span>
+
+                <span>•</span>
+
+                <span>Privacy</span>
+
+                <span>•</span>
+
+                <span>Respect</span>
+
+                <span>•</span>
+
+                <span>Consent</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================================
+     JAVASCRIPT
+     ========================================================== -->
+
+<script>
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    const yearElement =
+        document.getElementById("year");
+
+    if (yearElement) {
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+
+    /* ==========================================================
+       MOBILE MENU
+       ========================================================== */
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const mainNav =
+        document.getElementById("mainNav");
+
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                mainNav.classList.toggle(
+                    "active"
+                );
+
+                menuToggle.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+        const navLinks =
+            mainNav.querySelectorAll("a");
+
+
+        navLinks.forEach(function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    mainNav.classList.remove(
+                        "active"
+                    );
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+        });
+
+    }
+
+
+
+    /* ==========================================================
+       SCROLL REVEAL
+       ========================================================== */
+
+    const fadeElements =
+        document.querySelectorAll(".fade");
+
+
+    const observer =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    fadeElements.forEach(function (element) {
+
+        observer.observe(element);
+
+    });
+
+
+
+    /* ==========================================================
+       ESCAPE KEY — CLOSE MOBILE MENU
+       ========================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (event.key === "Escape") {
+
+                if (mainNav) {
+
+                    mainNav.classList.remove(
+                        "active"
+                    );
+
+                }
+
+                if (menuToggle) {
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+
+
+    /* ==========================================================
+       PAGE READY
+       ========================================================== */
+
+    console.log(
+        "Crossdresser's Desires Future Venue loaded."
+    );
+
+</script>
+
+</body></html>
                  
       
