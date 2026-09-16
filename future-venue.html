@@ -1303,4 +1303,1046 @@
                 grid;
 
             grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                25px;
+
+        }
+
+
+        .privacy-card {
+
+            padding:
+                30px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                rgba(16,11,18,0.35);
+
+        }
+
+
+        .privacy-card span {
+
+            color:
+                var(--gold);
+
+            font-size:
+                22px;
+
+            display:
+                block;
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .privacy-card h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                30px;
+
+            font-weight:
+                500;
+
+            margin-bottom:
+                8px;
+
+        }
+
+
+        .privacy-card p {
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* ==========================================================
+           ROADMAP
+           ========================================================== */
+
+        .roadmap {
+
+            background:
+                var(--black-soft);
+
+        }
+
+
+        .roadmap-list {
+
+            max-width:
+                850px;
+
+            margin:
+                0 auto;
+
+        }
+
+
+        .roadmap-item {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                90px 1fr;
+
+            gap:
+                30px;
+
+            padding:
+                28px 0;
+
+            border-bottom:
+                1px solid var(--border);
+
+        }
+
+
+        .roadmap-number {
+
+            color:
+                var(--gold);
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                35px;
+
+        }
+
+
+        .roadmap-item h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                31px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            margin-bottom:
+                5px;
+
+        }
+
+
+        .roadmap-item p {
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* ==========================================================
+           CTA
+           ========================================================== */
+
+        .cta {
+
+            padding:
+                110px 0;
+
+            text-align:
+                center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(92,24,56,0.65),
+                    var(--black) 65%
+                );
+
+        }
+
+
+        .cta h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(48px, 7vw, 76px);
+
+            font-weight:
+                500;
+
+            line-height:
+                1;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .cta p {
+
+            max-width:
+                650px;
+
+            margin:
+                0 auto;
+
+            color:
+                var(--muted);
+
+            font-size:
+                14px;
+
+        }
+
+
+        .cta .btn {
+
+            margin-top:
+                30px;
+
+        }
+
+
+        /* ==========================================================
+           FOOTER
+           ========================================================== */
+
+        footer {
+
+            padding:
+                65px 0 30px;
+
+            background:
+                #0b080d;
+
+            border-top:
+                1px solid var(--border);
+
+        }
+
+
+        .footer-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr;
+
+            gap:
+                50px;
+
+            padding-bottom:
+                45px;
+
+        }
+
+
+        .footer-brand h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                34px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .footer-brand p {
+
+            max-width:
+                420px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+        }
+
+
+        footer h4 {
+
+            color:
+                var(--gold-light);
+
+            font-size:
+                12px;
+
+            letter-spacing:
+                1px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        footer ul {
+
+            list-style:
+                none;
+
+        }
+
+
+        footer li {
+
+            margin-bottom:
+                9px;
+
+        }
+
+
+        footer li a {
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+        }
+
+
+        footer li a:hover {
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .footer-bottom {
+
+            padding-top:
+                25px;
+
+            border-top:
+                1px solid rgba(216,176,106,0.12);
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+
+            color:
+                #968992;
+
+            font-size:
+                10px;
+
+        }
+
+
+        /* ==========================================================
+           ANIMATION
+           ========================================================== */
+
+        .fade {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+
+        }
+
+
+        .fade.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        /* ==========================================================
+           RESPONSIVE
+           ========================================================== */
+
+        @media (max-width: 950px) {
+
+            .nav-links {
+
+                position:
+                    absolute;
+
+                top:
+                    82px;
+
+                left:
+                    0;
+
+                right:
+                    0;
+
+                background:
+                    rgba(16,11,18,0.98);
+
+                border-bottom:
+                    1px solid var(--border);
+
+                display:
+                    none;
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                padding:
+                    20px 6%;
+
+            }
+
+
+            .nav-links.active {
+
+                display:
+                    flex;
+
+            }
+
+
+            .nav-links a {
+
+                padding:
+                    12px 0;
+
+            }
+
+
+            .menu-toggle {
+
+                display:
+                    block;
+
+            }
+
+
+            .vision-grid,
+            .featured-grid,
+            .retreat-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .space-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .privacy-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            section {
+
+                padding:
+                    75px 0;
+
+            }
+
+
+            .hero {
+
+                min-height:
+                    78vh;
+
+            }
+
+
+            .hero-content {
+
+                padding:
+                    70px 0;
+
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    58px;
+
+            }
+
+
+            .hero-buttons {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+            }
+
+
+            .btn {
+
+                width:
+                    100%;
+
+            }
+
+
+            .space-grid,
+            .experience-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .image-placeholder,
+            .image-placeholder img {
+
+                min-height:
+                    320px;
+
+            }
+
+
+            .featured-image,
+            .featured-image img {
+
+                min-height:
+                    350px;
+
+            }
+
+
+            .retreat-points {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .roadmap-item {
+
+                grid-template-columns:
+                    55px 1fr;
+
+                gap:
+                    15px;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .footer-bottom {
+
+                flex-direction:
+                    column;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================================
+         HEADER
+         ========================================================== -->
+
+    <header>
+
+        <div class="container nav">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                Crossdresser's Desires
+
+                <span>
+                    East Rand • Gauteng
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="profiles.html">
+                    Profiles
+                </a>
+
+                <a href="experiences.html">
+                    Experiences
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="membership.html">
+                    Membership
+                </a>
+
+                <a href="member/login.html">
+                    Login
+                </a>
+
+                <a
+                    href="member/register.html"
+                    class="join"
+                >
+                    Join — R199
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-content fade">
+
+                    <div class="eyebrow">
+                        The Future Vision • 18+ • Private
+                    </div>
+
+                    <h1>
+                        Welcome To
+                        <span>
+                            The Desires House.
+                        </span>
+                    </h1>
+
+                    <p>
+
+                        Imagine a place where you can leave the
+                        outside world behind, step through the
+                        doors and simply be yourself.
+
+                        <br><br>
+
+                        The Desires House is our long-term vision
+                        for a private, welcoming destination where
+                        adult members can experience fashion,
+                        transformation, friendship, confidence and
+                        community in a discreet environment.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="member/register.html"
+                            class="btn"
+                        >
+                            Join The Community
+                        </a>
+
+                        <a
+                            href="#vision"
+                            class="btn btn-outline"
+                        >
+                            Explore The Vision
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             VISION INTRO
+             ====================================================== -->
+
+        <section
+            class="vision-intro"
+            id="vision"
+        >
+
+            <div class="container">
+
+                <div class="vision-grid">
+
+                    <div class="vision-text fade">
+
+                        <div class="eyebrow">
+                            More Than A Venue
+                        </div>
+
+                        <h3>
+                            A Place To Feel At Home.
+                        </h3>
+
+                        <p>
+
+                            The Desires House is not simply a
+                            building. It is the physical expression
+                            of the community we are building online.
+
+                        </p>
+
+                        <p>
+
+                            Our vision is to create a space where
+                            members can explore their personal style,
+                            meet like-minded people, learn new skills,
+                            enjoy private events and build friendships
+                            without feeling judged.
+
+                        </p>
+
+                        <p>
+
+                            The final venue will depend on the growth
+                            of the community, membership demand,
+                            funding and suitable premises.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="image-placeholder fade">
+
+                        <img
+                            src="images.png"
+                            alt="Future vision of The Desires House"
+                        >
+
+                        <div class="placeholder-label">
+                            Future Vision Image Placeholder
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             SPACES
+             ====================================================== -->
+
+        <section class="spaces">
+
+            <div class="container">
+
+                <div class="section-heading fade">
+
+                    <div class="eyebrow">
+                        The House
+                    </div>
+
+                    <h2>
+                        Spaces Designed
+                        For Expression.
+                    </h2>
+
+                    <p>
+
+                        The exact layout will evolve with the
+                        project, but these are some of the spaces
+                        we imagine forming part of The Desires House.
+
+                    </p>
+
+                </div>
+
+
+                <div class="space-grid">
+
+
+                    <div class="space-card fade">
+
+                        <div class="space-image">
+
+                            <img
+                                src="images.png"
+                                alt="Future makeup room"
+                            >
+
+                            <div class="placeholder-label">
+                                Makeup Room — Future Image
+                            </div>
+
+                        </div>
+
+                        <div class="space-content">
+
+                            <h3>
+                                Makeup Rooms
+                            </h3>
+
+                            <p>
+
+                                Dedicated spaces where members can
+                                experiment with makeup, styling,
+                                transformation and new looks in a
+                                comfortable environment.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-card fade">
+
+                        <div class="space-image">
+
+                            <img
+                                src="images.png"
+                                alt="Future dressing room"
+                            >
+
+                            <div class="placeholder-label">
+                                Dressing Room — Future Image
+                            </div>
+
+                        </div>
+
+                        <div class="space-content">
+
+                            <h3>
+                                Dressing Rooms
+                            </h3>
+
+                            <p>
+
+                                Private changing areas designed to
+                                give members the time and space to
+                                prepare their look without pressure.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-card fade">
+
+                        <div class="space-image">
+
+                            <img
+                                src="images.png"
+                                alt="Future wardrobe"
+                            >
+
+                            <div class="placeholder-label">
+                                Wardrobe — Future Image
+                            </div>
+
+                        </div>
+
+                        <div class="space-content">
+
+                            <h3>
+                                The Wardrobe
+                            </h3>
+
+                            <p>
+
+                                A future collection of clothing,
+                                accessories, shoes, wigs and styling
+                                pieces available for members to
+                                explore.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-card fade">
+
+                        <div class="space-image">
+
+                            <img
+                                src="images.png"
+                                alt="Future lounge"
+                            >
+
+                            <div class="placeholder-label">
+                                Lounge — Future Image
+                            </div>
+
+                        </div>
+
+                        <div class="space-content">
+
+                            <h3>
+                                The Lounge
+                            </h3>
+
+                            <p>
+
+                                A relaxed social area for conversation,
+                                coffee, music, introductions and
+                                simply spending time with friends.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="space-card fade">
+
+                        <div class="space-image">
+
+                            <img
+                                src="images.png"
+                                alt="Future photography studio"
+                            >
+
+                            <div class="placeholder-label">
+                                Photography Studio — Future Image
+                            </div>
+
+                        </div>
       
