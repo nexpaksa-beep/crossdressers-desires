@@ -1472,4 +1472,1126 @@
             48px;
 
         font-weight:
+            500;
+
+    }
+
+
+    .privacy-content p {
+
+        color:
+            var(--muted);
+
+        font-size:
+            14px;
+
+        line-height:
+            1.9;
+
+    }
+
+
+    /* ==========================================================
+       CTA
+       ========================================================== */
+
+    .final-cta {
+
+        text-align:
+            center;
+
+        padding:
+            110px 0;
+
+    }
+
+
+    .final-cta h2 {
+
+        font-family:
+            "Cormorant Garamond",
+            serif;
+
+        font-size:
+            clamp(46px, 6vw, 74px);
+
+        font-weight:
+            500;
+
+        line-height:
+            1;
+
+        margin-bottom:
+            20px;
+
+    }
+
+
+    .final-cta h2 span {
+
+        color:
+            var(--gold-light);
+
+        font-style:
+            italic;
+
+    }
+
+
+    .final-cta p {
+
+        max-width:
+            620px;
+
+        margin:
+            0 auto 30px;
+
+        color:
+            var(--muted);
+
+        font-size:
+            14px;
+
+    }
+
+
+    .btn {
+
+        display:
+            inline-flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+
+        width:
+            fit-content;
+
+        padding:
+            13px 24px;
+
+        border:
+            1px solid
+            var(--gold);
+
+        border-radius:
+            30px;
+
+        color:
+            var(--gold-light);
+
+        font-size:
+            11px;
+
+        font-weight:
+            600;
+
+        letter-spacing:
+            1px;
+
+        text-transform:
+            uppercase;
+
+        transition:
+            all 0.3s ease;
+
+    }
+
+
+    .btn:hover {
+
+        background:
+            var(--gold);
+
+        color:
+            var(--black);
+
+    }
+
+
+    /* ==========================================================
+       FOOTER
+       ========================================================== */
+
+    footer {
+
+        background:
+            #0a070b;
+
+        border-top:
+            1px solid
+            var(--border);
+
+        padding:
+            65px 0 25px;
+
+    }
+
+
+    .footer-grid {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            1.5fr 1fr 1fr;
+
+        gap:
+            50px;
+
+        padding-bottom:
+            45px;
+
+    }
+
+
+    .footer-brand h3 {
+
+        font-family:
+            "Cormorant Garamond",
+            serif;
+
+        font-size:
+            34px;
+
+        font-weight:
+            500;
+
+        color:
+            var(--gold-light);
+
+        margin-bottom:
+            12px;
+
+    }
+
+
+    .footer-brand p {
+
+        max-width:
+            430px;
+
+        color:
+            var(--muted);
+
+        font-size:
+            12px;
+
+        line-height:
+            1.8;
+
+    }
+
+
+    .footer-column h4 {
+
+        font-size:
+            11px;
+
+        text-transform:
+            uppercase;
+
+        letter-spacing:
+            1.8px;
+
+        color:
+            var(--gold-light);
+
+        margin-bottom:
+            18px;
+
+    }
+
+
+    .footer-column a {
+
+        display:
+            block;
+
+        color:
+            var(--muted);
+
+        font-size:
+            11px;
+
+        margin-bottom:
+            9px;
+
+        transition:
+            color 0.3s ease;
+
+    }
+
+
+    .footer-column a:hover {
+
+        color:
+            var(--gold-light);
+
+    }
+
+
+    .footer-bottom {
+
+        padding-top:
+            22px;
+
+        border-top:
+            1px solid
+            rgba(216,176,106,0.10);
+
+        display:
+            flex;
+
+        justify-content:
+            space-between;
+
+        gap:
+            20px;
+
+        color:
+            #8f8188;
+
+        font-size:
+            9px;
+
+        letter-spacing:
+            0.5px;
+
+    }
+
+
+    /* ==========================================================
+       FADE ANIMATION
+       ========================================================== */
+
+    .fade {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(25px);
+
+        transition:
+            opacity 0.8s ease,
+            transform 0.8s ease;
+
+    }
+
+
+    .fade.visible {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    /* ==========================================================
+       RESPONSIVE
+       ========================================================== */
+
+    @media (
+        max-width: 950px
+    ) {
+
+        nav {
+
+            position:
+                absolute;
+
+            top:
+                82px;
+
+            left:
+                0;
+
+            right:
+                0;
+
+            display:
+                none;
+
+            flex-direction:
+                column;
+
+            align-items:
+                stretch;
+
+            padding:
+                20px;
+
+            background:
+                rgba(16,11,18,0.98);
+
+            border-bottom:
+                1px solid
+                var(--border);
+
+        }
+
+
+        nav.open {
+
+            display:
+                flex;
+
+        }
+
+
+        nav a {
+
+            padding:
+                12px 0;
+
+        }
+
+
+        #menuToggle {
+
+            display:
+                block;
+
+        }
+
+
+        .events-grid {
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+        }
+
+
+        .types-grid {
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+        }
+
+
+        .featured-event {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .featured-visual {
+
+            min-height:
+                360px;
+
+        }
+
+
+        .privacy-content {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .footer-grid {
+
+            grid-template-columns:
+                1fr 1fr;
+
+        }
+
+    }
+
+
+    @media (
+        max-width: 650px
+    ) {
+
+        .container {
+
+            width:
+                min(
+                    100% - 28px,
+                    1180px
+                );
+
+        }
+
+
+        .hero {
+
+            min-height:
+                560px;
+
+        }
+
+
+        .hero-content {
+
+            padding:
+                80px 0;
+
+        }
+
+
+        h1 {
+
+            font-size:
+                58px;
+
+        }
+
+
+        section {
+
+            padding:
+                75px 0;
+
+        }
+
+
+        .events-grid,
+        .types-grid {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .event-card {
+
+            min-height:
+                330px;
+
+        }
+
+
+        .featured-content {
+
+            padding:
+                45px 25px;
+
+        }
+
+
+        .featured-visual {
+
+            min-height:
+                300px;
+
+        }
+
+
+        .featured-symbol {
+
+            width:
+                170px;
+
+            height:
+                170px;
+
+            font-size:
+                75px;
+
+        }
+
+
+        .event-details {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .retreat-box {
+
+            padding:
+                45px 22px;
+
+        }
+
+
+        .privacy-content h2 {
+
+            font-size:
+                40px;
+
+        }
+
+
+        .footer-grid {
+
+            grid-template-columns:
+                1fr;
+
+            gap:
+                35px;
+
+        }
+
+
+        .footer-bottom {
+
+            flex-direction:
+                column;
+
+        }
+
+    }
+
+</style>
+
+</head><body><!-- ==========================================================
+     HEADER
+     ========================================================== -->
+
+<header>
+
+    <div class="container header-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            Crossdresser's Desires
+
+            <span>
+                East Rand • Gauteng
+            </span>
+
+        </a>
+
+
+        <button
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+
+            ☰
+
+        </button>
+
+
+        <nav id="mainNav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="profiles.html">
+                Profiles
+            </a>
+
+            <a href="experiences.html">
+                Experiences
+            </a>
+
+            <a
+                href="events.html"
+                class="active"
+            >
+                Events
+            </a>
+
+            <a href="membership.html">
+                Membership
+            </a>
+
+            <a href="member/login.html">
+                Login
+            </a>
+
+            <a
+                href="member/register.html"
+                class="nav-join"
+            >
+                Join — R199
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================================
+     HERO
+     ========================================================== -->
+
+<main>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content fade">
+
+                <div class="eyebrow">
+                    18+ • Private • Discreet
+                </div>
+
+                <h1>
+
+                    Moments Worth
+                    <span>
+                        Remembering.
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Crossdresser's Desires events are designed
+                    around connection, confidence, style and
+                    community. From relaxed social evenings to
+                    future retreats, our goal is to create places
+                    where members can meet people who understand
+                    the journey.
+
+                </p>
+
+                <div class="hero-note">
+
+                    ✦ Members-first community events
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         UPCOMING EVENTS
+         ====================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-heading fade">
+
+                <div class="eyebrow">
+                    What's Happening
+                </div>
+
+                <h2>
+                    Community <em>Events</em>
+                </h2>
+
+                <p>
+
+                    Our event calendar will grow alongside the
+                    community. Some events may be members-only,
+                    while selected community activities may be
+                    open to verified 18+ guests.
+
+                </p>
+
+            </div>
+
+
+            <div class="events-grid">
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                01
+                            </strong>
+
+                            <span>
+                                Coming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Welcome Evening
+                        </h3>
+
+                        <p>
+
+                            A relaxed social gathering for members
+                            to meet, chat, introduce themselves and
+                            make new connections in a comfortable
+                            environment.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Social
+                        </span>
+
+                        <span class="event-tag">
+                            Members
+                        </span>
+
+                        <span class="event-tag">
+                            18+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                02
+                            </strong>
+
+                            <span>
+                                Coming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Style Evening
+                        </h3>
+
+                        <p>
+
+                            An evening focused on fashion,
+                            personal style, presentation and
+                            sharing inspiration with people who
+                            appreciate feminine expression.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Fashion
+                        </span>
+
+                        <span class="event-tag">
+                            Style
+                        </span>
+
+                        <span class="event-tag">
+                            18+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                03
+                            </strong>
+
+                            <span>
+                                Coming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Photography Night
+                        </h3>
+
+                        <p>
+
+                            A private photography experience
+                            where members can explore their look,
+                            experiment with presentation and
+                            capture their favourite moments.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Photography
+                        </span>
+
+                        <span class="event-tag">
+                            Confidence
+                        </span>
+
+                        <span class="event-tag">
+                            18+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                04
+                            </strong>
+
+                            <span>
+                                Coming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Transformation Night
+                        </h3>
+
+                        <p>
+
+                            A confidence-focused evening around
+                            makeup, styling and transformation,
+                            with members sharing tips and
+                            inspiration.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Makeup
+                        </span>
+
+                        <span class="event-tag">
+                            Beauty
+                        </span>
+
+                        <span class="event-tag">
+                            Members
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                Coming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Girls' Night
+                        </h3>
+
+                        <p>
+
+                            A friendly members' evening built
+                            around conversation, laughter, music,
+                            fashion and simply enjoying time
+                            together.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Social
+                        </span>
+
+                        <span class="event-tag">
+                            Community
+                        </span>
+
+                        <span class="event-tag">
+                            18+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card fade">
+
+                    <div>
+
+                        <div class="event-date">
+
+                            <strong>
+                                06
+                            </strong>
+
+                            <span>
+                                Future
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Weekend Retreat
+                        </h3>
+
+                        <p>
+
+                            A future multi-day experience designed
+                            for members who want to step away from
+                            everyday life and fully enjoy the
+                            community in a private setting.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-meta">
+
+                        <span class="event-tag">
+                            Retreat
+                        </span>
+
+                        <span class="event-tag">
+                            Private
+                        </span>
+
+                        <span class="event-tag">
+                            18+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         FEATURED EVENT
+         ====================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="featured-event fade">
+
+                <div class="featured-visual">
+
+                    <div class="featured-symbol">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <div class="featured-content">
+
+                    <div class="eyebrow">
+                        The Desires Experience
+                    </div>
+
+                    <h2>
+
+                        More Than An
+                        <span>
+                            Event.
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        We want our gatherings to feel different
+                        from ordinary nights out. They should give
+                        members a chance to relax, express
+                        themselves, meet new people and experience
+                        a sense of belonging.
+
+                    </p>
+
+                    <p>
+
+                        As the community grows, members will have
+                        opportunities to suggest event themes,
+                        activities and experiences they would like
+                        to see.
+
+                    </p>
+
+
+                    <div class="event-details">
+
+                        <div class="detail-box">
+
+                            <span>
+                                Community
+                            </span>
+
+                            <strong>
+                                Members First
+                            </strong>
+
+                        </div>
+
+            
     
