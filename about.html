@@ -1226,4 +1226,1058 @@
         .vision p {
 
             color:
+                var(--muted);
+
+            font-size:
+                15px;
+
+            line-height:
+                2;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .vision-note {
+
+            display:
+                inline-block;
+
+            margin-top:
+                15px;
+
+            color:
+                var(--gold);
+
+            font-size:
+                11px;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        /* =====================================================
+           CTA
+           ===================================================== */
+
+        .cta-section {
+
+            padding:
+                90px 24px;
+
+        }
+
+
+        .cta-box {
+
+            max-width:
+                1050px;
+
+            margin:
+                0 auto;
+
+            padding:
+                65px 40px;
+
+            text-align:
+                center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--burgundy),
+                    var(--burgundy-dark)
+                );
+
+            border:
+                1px solid
+                var(--border);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .cta-box h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    38px,
+                    6vw,
+                    55px
+                );
+
+            font-weight:
+                500;
+
+            color:
+                var(--cream);
+
+            margin-bottom:
+                14px;
+
+        }
+
+
+        .cta-box p {
+
+            max-width:
+                650px;
+
+            margin:
+                0 auto 30px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        .cta-buttons {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                12px;
+
+        }
+
+
+        .button {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            min-width:
+                150px;
+
+            padding:
+                13px 22px;
+
+            font-size:
+                11px;
+
+            font-weight:
+                600;
+
+            letter-spacing:
+                1px;
+
+            text-transform:
+                uppercase;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+
+        }
+
+
+        .button:hover {
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .button.primary {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--gold-light),
+                    var(--gold)
+                );
+
+            color:
+                var(--black);
+
+        }
+
+
+        .button.outline {
+
+            border:
+                1px solid
+                var(--gold);
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        footer {
+
+            border-top:
+                1px solid
+                var(--border);
+
+            background:
+                #0b080d;
+
+            padding:
+                55px 24px 25px;
+
+        }
+
+
+        .footer-inner {
+
+            max-width:
+                1150px;
+
+            margin:
+                0 auto;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr;
+
+            gap:
+                45px;
+
+        }
+
+
+        .footer-brand h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            color:
+                var(--gold-light);
+
+            font-size:
+                30px;
+
+            font-weight:
+                500;
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .footer-brand p {
+
+            max-width:
+                430px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        .footer-column h4 {
+
+            color:
+                var(--cream);
+
+            font-size:
+                11px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                18px;
+
+        }
+
+
+        .footer-column a {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+            margin-bottom:
+                10px;
+
+            transition:
+                color 0.2s ease;
+
+        }
+
+
+        .footer-column a:hover {
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .footer-bottom {
+
+            max-width:
+                1150px;
+
+            margin:
+                40px auto 0;
+
+            padding-top:
+                20px;
+
+            border-top:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.06
+                );
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                15px;
+
+            flex-wrap:
+                wrap;
+
+            color:
+                #897e85;
+
+            font-size:
+                10px;
+
+        }
+
+
+        /* =====================================================
+           FADE ANIMATION
+           ===================================================== */
+
+        .fade-in {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(20px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+
+        }
+
+
+        .fade-in.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+           ===================================================== */
+
+        @media (
+            max-width: 900px
+        ) {
+
+            .nav-links {
+
+                position:
+                    absolute;
+
+                top:
+                    100%;
+
+                left:
+                    0;
+
+                right:
+                    0;
+
+                display:
+                    none;
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                gap:
+                    0;
+
+                background:
+                    rgba(
+                        16,
+                        11,
+                        18,
+                        0.98
+                    );
+
+                border-bottom:
+                    1px solid
+                    var(--border);
+
+            }
+
+
+            .nav-links.open {
+
+                display:
+                    flex;
+
+            }
+
+
+            .nav-links a {
+
+                padding:
+                    16px 24px;
+
+                border-bottom:
+                    1px solid
+                    rgba(
+                        255,
+                        255,
+                        255,
+                        0.04
+                    );
+
+            }
+
+
+            .nav-links .join-link {
+
+                margin:
+                    12px 24px 18px;
+
+                text-align:
+                    center;
+
+                border:
+                    1px solid
+                    var(--gold);
+
+            }
+
+
+            .menu-toggle {
+
+                display:
+                    block;
+
+            }
+
+
+            .story-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .values-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .audience-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .footer-inner {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+            }
+
+        }
+
+
+        @media (
+            max-width: 600px
+        ) {
+
+            .header-inner {
+
+                padding:
+                    15px 18px;
+
+            }
+
+
+            .brand-name {
+
+                font-size:
+                    25px;
+
+            }
+
+
+            .hero {
+
+                min-height:
+                    62vh;
+
+                padding:
+                    70px 20px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    54px;
+
+            }
+
+
+            .hero p {
+
+                font-size:
+                    14px;
+
+            }
+
+
+            .section {
+
+                padding:
+                    70px 18px;
+
+            }
+
+
+            .story-card {
+
+                padding:
+                    28px 22px;
+
+            }
+
+
+            .privacy-content {
+
+                padding:
+                    70px 18px;
+
+            }
+
+
+            .privacy-content h2 {
+
+                font-size:
+                    40px;
+
+            }
+
+
+            .audience-item {
+
+                padding:
+                    22px;
+
+            }
+
+
+            .vision {
+
+                padding:
+                    75px 20px;
+
+            }
+
+
+            .cta-section {
+
+                padding:
+                    65px 18px;
+
+            }
+
+
+            .cta-box {
+
+                padding:
+                    48px 22px;
+
+            }
+
+
+            .footer-inner {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    30px;
+
+            }
+
+
+            .footer-bottom {
+
+                flex-direction:
+                    column;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header>
+
+        <div class="header-inner">
+
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <span class="brand-name">
+                    Crossdresser's Desires
+                </span>
+
+                <span class="brand-location">
+                    East Rand • Gauteng
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                type="button"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="profiles.html">
+                    Profiles
+                </a>
+
+                <a href="experiences.html">
+                    Experiences
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="membership.html">
+                    Membership
+                </a>
+
+                <a href="member/login.html">
+                    Login
+                </a>
+
+                <a
+                    href="membership.html"
+                    class="join-link"
+                >
+                    Join — R199
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    About Crossdresser's Desires
+                </span>
+
+                <h1>
+                    A Space to
+                    <span>Be Yourself.</span>
+                </h1>
+
+                <p>
+                    Crossdresser's Desires was created to provide
+                    adults with a private, respectful and welcoming
+                    community where feminine expression, confidence,
+                    friendship and personal discovery can be explored
+                    without judgement.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             OUR STORY
+             ================================================= -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Our Story
+                </div>
+
+                <h2>
+                    More Than Just A Website
+                </h2>
+
+                <p>
+                    Crossdresser's Desires is being built as a
+                    community first — with the long-term goal of
+                    creating a real-world destination for adults
+                    who want somewhere they can relax, connect
+                    and express themselves.
+                </p>
+
+            </div>
+
+
+            <div class="story-grid">
+
+
+                <article class="story-card">
+
+                    <h3>
+                        Why We Started
+                    </h3>
+
+                    <p>
+                        For many crossdressers, feminine expression
+                        can be something deeply personal. Some people
+                        have supportive friends or partners, while
+                        others may have very few people with whom
+                        they can openly share this part of themselves.
+                    </p>
+
+                    <p>
+                        Crossdresser's Desires was created around a
+                        simple idea: adults deserve a place where
+                        they can connect with other adults who
+                        understand the experience.
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <h3>
+                        Where We're Going
+                    </h3>
+
+                    <p>
+                        The online community is the beginning.
+                        Over time, the vision is to develop private
+                        experiences, social gatherings and eventually
+                        a dedicated physical venue in the East Rand.
+                    </p>
+
+                    <p>
+                        The goal is to build that future carefully,
+                        responsibly and together with the community
+                        itself.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             VALUES
+             ================================================= -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    What Matters To Us
+                </div>
+
+                <h2>
+                    Our Community Values
+                </h2>
+
+                <p>
+                    The foundation of Crossdresser's Desires is
+                    built around respect, privacy and creating an
+                    environment where adults can feel comfortable
+                    being themselves.
+                </p>
+
+            </div>
+
+
+            <div class="values-grid">
+
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Privacy
+                    </h3>
+
+                    <p>
+                        We understand that not everyone wants
+                        their personal life or identity publicly
+                        visible. Privacy and discretion are central
+                        to the community.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Respect
+                    </h3>
+
+                    <p>
+                        Every member should be treated with dignity.
+                        Different identities, styles, personalities
+                        and levels of experience are welcome.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Consent
+                    </h3>
+
+                    <p>
+                        Healthy communities depend on clear
+                        boundaries, mutual respect and enthusiastic
+                        consent between adults.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRIVACY SECTION
+             ================================================= -->
+
+        <section class="privacy-section">
+
+            <div class="privacy-content">
+
+                <div class="privacy-icon">
+                    ♢
+                </div>
+
+                <h2>
+                    Your Privacy Matters
+                </h2>
+
+                <p>
+                    Crossdresser's Desires is designed with the
+                    understanding that members may want to use a
+                    chosen name or maintain a level of separation
+                    between their community life and everyday life.
+                </p>
+
+                <p>
+                    Public-facing profiles should only contain
+                    information members are comfortable sharing.
+                    The future platform will include appropriate
+                    privacy and visibility controls as the member
+                    system develops.
+                </p>
+
+
+                <div class="privacy-points">
+
+                    <span>
+                        18+ Community
+                    </span>
+
+                    <span>
+                        Discretion
+                    </span>
+
+                    <span>
+                        Chosen Names
+                    </span>
+
+                    <span>
+                        Privacy Controls
+                    </span>
+
+                    <span>
+                        Respect
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WHO WE ARE FOR
+             ================================================= -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Our Community
+                </div>
+
+                <h2>
+                    A Place For Different Journeys
+                </h2>
+
+                <p>
+                    There is no single way to be a crossdresser.
+                    Everyone has their own story, style, interests
+                    and reasons for being part of the community.
+                </p>
+
+            </div>
+
+
+            <div class="audience-grid">
+
+
+                <article class="aud
                 
