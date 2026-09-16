@@ -1522,4 +1522,924 @@
                 10px;
 
             box-shadow:
-                var(--sha
+                var(--shadow);
+
+        .nav-links.active {
+
+            display:
+                flex;
+
+        }
+
+
+        .nav-links a {
+
+            padding:
+                12px;
+
+        }
+
+
+        .nav-links .nav-join {
+
+            text-align:
+                center;
+
+        }
+
+
+        .menu-toggle {
+
+            display:
+                block;
+
+        }
+
+
+        .register-section {
+
+            padding:
+                50px 0 65px;
+
+        }
+
+
+        .register-card {
+
+            padding:
+                24px 18px;
+
+            border-radius:
+                18px;
+
+        }
+
+
+        .plans {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .form-grid {
+
+            grid-template-columns:
+                1fr;
+
+            gap:
+                0;
+
+        }
+
+
+        .form-group.full {
+
+            grid-column:
+                auto;
+
+        }
+
+
+        .footer-grid {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .footer-bottom {
+
+            flex-direction:
+                column;
+
+        }
+
+    }
+
+
+</style>
+
+</head><body><!-- ==============================================================
+     HEADER
+     ============================================================== --><header class="site-header"><div class="container nav-container">
+
+    <a
+        href="../index.html"
+        class="logo"
+    >
+        Crossdresser's
+        <span>Desires</span>
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="../about.html">
+            About Us
+        </a>
+
+        <a href="../profiles.html">
+            Profiles
+        </a>
+
+        <a href="../experiences.html">
+            Experiences
+        </a>
+
+        <a href="../events.html">
+            Events
+        </a>
+
+        <a href="../membership.html">
+            Membership
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+        <a
+            href="register.html"
+            class="nav-join"
+        >
+            Join — R199
+        </a>
+
+    </nav>
+
+
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+    >
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</div>
+
+</header><!-- ==============================================================
+     REGISTRATION
+     ============================================================== --><main><section class="register-section"><div class="container">
+
+    <div class="register-grid">
+
+
+        <!-- ==================================================
+             INTRO
+             ================================================== -->
+
+        <div class="hero-copy">
+
+            <span class="eyebrow">
+                18+ • Private • Discreet
+            </span>
+
+            <h1>
+                Create Your
+                <span>Account.</span>
+            </h1>
+
+            <p>
+                Welcome to Crossdresser's Desires.
+                Create your member account and choose
+                the membership option that works for you.
+            </p>
+
+
+            <div class="trust-list">
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <span>
+                        Your privacy and discretion come first.
+                    </span>
+
+                </div>
+
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span>
+                        A community built around respect and consent.
+                    </span>
+
+                </div>
+
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>
+                        Connect with adults who share similar interests.
+                    </span>
+
+                </div>
+
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>
+                        Help build the future vision of The Desires House.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             REGISTRATION CARD
+             ================================================== -->
+
+        <div class="register-card">
+
+            <div class="card-heading">
+
+                <h2>
+                    Join The Community
+                </h2>
+
+                <p>
+                    Choose your membership and create your account.
+                </p>
+
+            </div>
+
+
+            <!-- ==================================================
+                 MEMBERSHIP PLANS
+                 ================================================== -->
+
+            <div class="plan-title">
+                Choose Your Membership
+            </div>
+
+
+            <div class="plans">
+
+
+                <div
+                    class="plan selected"
+                    data-plan="monthly"
+                    tabindex="0"
+                >
+
+                    <div class="plan-name">
+                        Monthly
+                    </div>
+
+                    <div class="plan-price">
+                        R199
+                    </div>
+
+                    <div class="plan-period">
+                        per month
+                    </div>
+
+                    <div class="plan-equivalent">
+                        Flexible monthly membership
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="plan"
+                    data-plan="annual"
+                    tabindex="0"
+                >
+
+                    <span class="plan-badge">
+                        ANNUAL
+                    </span>
+
+                    <div class="plan-name">
+                        Annual
+                    </div>
+
+                    <div class="plan-price">
+                        R1,500
+                    </div>
+
+                    <div class="plan-period">
+                        per year
+                    </div>
+
+                    <div class="plan-equivalent">
+                        Equivalent to R125/month
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 FORM
+                 ================================================== -->
+
+            <form
+                id="registrationForm"
+                novalidate
+            >
+
+                <input
+                    type="hidden"
+                    id="selectedPlan"
+                    name="membership"
+                    value="monthly"
+                >
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="displayName">
+                            Display Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="displayName"
+                            name="displayName"
+                            placeholder="e.g. Jessica"
+                            autocomplete="nickname"
+                            required
+                        >
+
+                        <div class="form-note">
+                            This is the name other members can see.
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="email">
+                            Email Address
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <div class="form-note">
+                            Use at least 8 characters.
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==================================================
+                     AGREEMENTS
+                     ================================================== -->
+
+                <div class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="ageConfirm"
+                        required
+                    >
+
+                    <label for="ageConfirm">
+
+                        I confirm that I am
+                        <strong>18 years of age or older</strong>
+                        and understand that Crossdresser's Desires
+                        is an adults-only community.
+
+                    </label>
+
+                </div>
+
+
+                <div class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="privacyConfirm"
+                        required
+                    >
+
+                    <label for="privacyConfirm">
+
+                        I have read and agree to the
+                        <a href="../privacy.html">
+                            Privacy Policy
+                        </a>
+                        and
+                        <a href="../terms.html">
+                            Terms & Conditions
+                        </a>.
+
+                    </label>
+
+                </div>
+
+
+                <div class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="communityConfirm"
+                        required
+                    >
+
+                    <label for="communityConfirm">
+
+                        I agree to treat other members with
+                        respect, protect their privacy and respect
+                        consent and personal boundaries.
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="register-button"
+                >
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Continue With Membership
+
+                </button>
+
+
+            </form>
+
+
+            <div class="login-note">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Member Login
+                </a>
+
+            </div>
+
+
+            <div class="security-note">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure membership features are being developed.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section></main><!-- ==============================================================
+     FOOTER
+     ============================================================== --><footer class="site-footer"><div class="container">
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="../index.html"
+                class="footer-logo"
+            >
+                Crossdresser's
+                <span>Desires</span>
+            </a>
+
+            <p>
+                A private 18+ community for crossdressers,
+                feminine expression, friendship, confidence
+                and shared experiences.
+            </p>
+
+
+            <div class="footer-badges">
+
+                <span>
+                    <i class="fa-solid fa-18"></i>
+                    18+
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-lock"></i>
+                    Private
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-heart"></i>
+                    Respect
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Explore
+            </h3>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../about.html">
+                About Us
+            </a>
+
+            <a href="../profiles.html">
+                Crossdresser Profiles
+            </a>
+
+            <a href="../experiences.html">
+                Experiences
+            </a>
+
+            <a href="../events.html">
+                Events
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Members
+            </h3>
+
+            <a href="../membership.html">
+                Membership
+            </a>
+
+            <a href="login.html">
+                Member Login
+            </a>
+
+            <a href="register.html">
+                Create Account
+            </a>
+
+            <a href="../contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Information
+            </h3>
+
+            <a href="../privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="../terms.html">
+                Terms & Conditions
+            </a>
+
+            <a href="../community-guidelines.html">
+                Community Guidelines
+            </a>
+
+            <a href="../future-venue.html">
+                The Desires House
+            </a>
+
+            <a href="../donations.html">
+                Support The Vision
+            </a>
+
+            <a href="../faq.html">
+                FAQ
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span id="year"></span>
+            Crossdresser's Desires East Rand.
+            All rights reserved.
+        </p>
+
+        <p>
+            18+ • Privacy • Respect • Consent
+        </p>
+
+    </div>
+
+</div>
+
+</footer><!-- ==============================================================
+     JAVASCRIPT
+     ============================================================== --><script>
+
+    /* ==========================================================
+       MOBILE MENU
+       ========================================================== */
+
+    const menuToggle =
+        document.querySelector(
+            ".menu-toggle"
+        );
+
+    const navLinks =
+        document.querySelector(
+            ".nav-links"
+        );
+
+
+    if (
+        menuToggle &&
+        navLinks
+    ) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle(
+                    "active"
+                );
+
+                menuToggle.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+        navLinks
+            .querySelectorAll("a")
+            .forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            navLinks.classList.remove(
+                                "active"
+                            );
+
+                            menuToggle.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    }
+
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    const yearElement =
+        document.getElementById(
+            "year"
+        );
+
+
+    if (yearElement) {
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* ==========================================================
+       MEMBERSHIP PLAN SELECTION
+       ========================================================== */
+
+    const plans =
+        document.querySelectorAll(
+            ".plan"
+        );
+
+    const selectedPlan =
+        document.getElementById(
+            "selectedPlan"
+        );
+
+
+    plans.forEach(
+        function (plan) {
+
+            function selectPlan() {
+
+                plans.forEach(
+                    function (otherPlan) {
+
+                        otherPlan.classList.remove(
+                            "selected"
+                        );
+
+                    }
+                );
+
+
+                plan.classList.add(
+                    "selected"
+                );
+
+
+                if (selectedPlan) {
+
+                    selectedPlan.value =
+                        plan.dataset.plan;
+
+                }
+
+            }
+
+
+            plan.addEventListener(
+                "click",
+                selectPlan
+            );
+
+
+            plan.addEventListener(
+                "keydown",
+                function (event) {
+
+                    if (
+                        event.key === "Enter" ||
+                        event.key === " "
+                    ) {
+
+                        event.preventDefault();
+
+                        selectPlan();
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+    /* ==========================================================
+       REGISTRATION FORM
+       ========================================================== */
+
+    const registrationForm =
+        document.getElementById(
+            "registrationForm"
+        );
+
+
+    if (registrationForm) {
+
+        registrationForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const firstName =
+                    document.getElementById(
+                        "firstName"
+                    ).value.trim();
+
+
+                const displayName =
+                    document.getElementById(
+                        "displayName"
+                    ).value.trim();
+
+
+                const email =
+                    document.getElementById(
+                        "email"
+                    ).value.trim();
+
+
+                const password =
+                    document.getElementById(
+                        "password"
+                    ).value;
+
+
+                const confirmPassword =
+                    document.getElementById(
+                        "confirmPassword"
+     
