@@ -1509,5 +1509,934 @@
 
         transform:
             translateY(18px);
+                transform:
+            translateY(18px);
+
+        transition:
+            opacity 0.7s ease,
+            transform 0.7s ease;
+
+    }
+
+
+    .fade-in.visible {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    /* ==========================================================
+       RESPONSIVE
+       ========================================================== */
+
+    @media (
+        max-width: 980px
+    ) {
+
+        .nav-links {
+
+            gap:
+                13px;
+
+        }
+
+        .nav-links a {
+
+            font-size:
+                10px;
+
+        }
+
+        .guidelines-wrapper {
+
+            grid-template-columns:
+                220px 1fr;
+
+            gap:
+                30px;
+
+        }
+
+        .footer-grid {
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+        }
+
+    }
+
+
+    @media (
+        max-width: 760px
+    ) {
+
+        .nav {
+
+            min-height:
+                70px;
+
+        }
+
+
+        .menu-toggle {
+
+            display:
+                block;
+
+        }
+
+
+        .nav-links {
+
+            position:
+                absolute;
+
+            top:
+                70px;
+
+            left:
+                0;
+
+            right:
+                0;
+
+            display:
+                none;
+
+            flex-direction:
+                column;
+
+            align-items:
+                stretch;
+
+            gap:
+                0;
+
+            padding:
+                15px 5% 22px;
+
+            background:
+                rgba(16,11,18,0.98);
+
+            border-bottom:
+                1px solid var(--border);
+
+        }
+
+
+        .nav-links.active {
+
+            display:
+                flex;
+
+        }
+
+
+        .nav-links a {
+
+            padding:
+                13px 0;
+
+            font-size:
+                12px;
+
+            border-bottom:
+                1px solid
+                rgba(216,176,106,0.08);
+
+        }
+
+
+        .join-button {
+
+            text-align:
+                center;
+
+            margin-top:
+                10px;
+
+        }
+
+
+        .hero {
+
+            min-height:
+                430px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                55px;
+
+        }
+
+
+        .guidelines-wrapper {
+
+            display:
+                block;
+
+            padding:
+                55px 0;
+
+        }
+
+
+        .sidebar {
+
+            position:
+                static;
+
+            margin-bottom:
+                35px;
+
+        }
+
+
+        .principles-grid {
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+        }
+
+
+        .principle {
+
+            border-right:
+                none;
+
+            border-bottom:
+                1px solid
+                rgba(216,176,106,0.12);
+
+        }
+
+
+        .principle:nth-last-child(-n+2) {
+
+            border-bottom:
+                none;
+
+        }
+
+
+        .footer-grid {
+
+            grid-template-columns:
+                1fr;
+
+            gap:
+                30px;
+
+        }
+
+    }
+
+
+    @media (
+        max-width: 480px
+    ) {
+
+        .container {
+
+            width:
+                90%;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                47px;
+
+        }
+
+
+        .hero p {
+
+            font-size:
+                14px;
+
+        }
+
+
+        .guideline-section h2 {
+
+            font-size:
+                30px;
+
+        }
+
+
+        .principles-grid {
+
+            grid-template-columns:
+                1fr;
+
+        }
+
+
+        .principle {
+
+            border-bottom:
+                1px solid
+                rgba(216,176,106,0.12) !important;
+
+        }
+
+
+        .principle:last-child {
+
+            border-bottom:
+                none !important;
+
+        }
+
+
+        .footer-bottom {
+
+            flex-direction:
+                column;
+
+            align-items:
+                flex-start;
+
+        }
+
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================================
+         HEADER
+         ========================================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav class="nav">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    Crossdresser's Desires
+
+                    <span>
+                        East Rand • Gauteng
+                    </span>
+
+                </a>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                >
+                    ☰
+                </button>
+
+
+                <div
+                    class="nav-links"
+                    id="navLinks"
+                >
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="profiles.html">
+                        Profiles
+                    </a>
+
+                    <a href="experiences.html">
+                        Experiences
+                    </a>
+
+                    <a href="events.html">
+                        Events
+                    </a>
+
+                    <a href="membership.html">
+                        Membership
+                    </a>
+
+                    <a href="member/login.html">
+                        Login
+                    </a>
+
+                    <a
+                        href="member/register.html"
+                        class="join-button"
+                    >
+                        Join — R199
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content fade-in">
+
+                <span class="eyebrow">
+                    18+ • Private • Discreet • Respectful
+                </span>
+
+
+                <h1>
+                    Community <span>Guidelines.</span>
+                </h1>
+
+
+                <p>
+
+                    Crossdresser's Desires is intended to
+                    be a welcoming private community where
+                    adults can explore feminine expression,
+                    build confidence, meet others and enjoy
+                    shared interests in a respectful
+                    environment.
+
+                </p>
+
+
+                <div class="hero-badges">
+
+                    <span>
+                        Adults 18+
+                    </span>
+
+                    <span>
+                        Privacy First
+                    </span>
+
+                    <span>
+                        Consent
+                    </span>
+
+                    <span>
+                        Respect
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================================
+         GUIDELINES
+         ========================================================== -->
+
+    <div class="container">
+
+        <div class="guidelines-wrapper">
+
+
+            <!-- ==================================================
+                 SIDEBAR
+                 ================================================== -->
+
+            <aside class="sidebar fade-in">
+
+                <h3>
+                    Community Guide
+                </h3>
+
+
+                <a href="#purpose">
+                    Our Community
+                </a>
+
+                <a href="#18plus">
+                    18+ Only
+                </a>
+
+                <a href="#respect">
+                    Respect
+                </a>
+
+                <a href="#consent">
+                    Consent
+                </a>
+
+                <a href="#privacy">
+                    Privacy
+                </a>
+
+                <a href="#profiles">
+                    Profiles
+                </a>
+
+                <a href="#messages">
+                    Communication
+                </a>
+
+                <a href="#content">
+                    Member Content
+                </a>
+
+                <a href="#events">
+                    Events
+                </a>
+
+                <a href="#prohibited">
+                    Not Permitted
+                </a>
+
+                <a href="#reporting">
+                    Reporting
+                </a>
+
+                <a href="#moderation">
+                    Moderation
+                </a>
+
+            </aside>
+
+
+            <!-- ==================================================
+                 CONTENT
+                 ================================================== -->
+
+            <main class="guidelines-content">
+
+
+                <div class="intro-box fade-in">
+
+                    <strong>
+                        The Desires Standard
+                    </strong>
+
+                    <p>
+
+                        Our community works best when
+                        everyone understands the same basic
+                        expectations: adults only, mutual
+                        respect, clear consent, personal
+                        privacy and responsible behaviour.
+
+                    </p>
+
+                </div>
+
+
+                <!-- ==================================================
+                     1. OUR COMMUNITY
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="purpose"
+                >
+
+                    <h2>
+                        1. Our Community
+                    </h2>
+
+
+                    <p>
+
+                        Crossdresser's Desires is designed
+                        for adults who are interested in
+                        crossdressing, feminine expression,
+                        fashion, beauty, confidence,
+                        friendship, photography, social
+                        activities and related lifestyle
+                        interests.
+
+                    </p>
+
+
+                    <p>
+
+                        Members may have very different
+                        backgrounds, identities, styles,
+                        experiences and reasons for being
+                        part of the community. Those
+                        differences should be treated with
+                        dignity.
+
+                    </p>
+
+
+                    <div class="rule-card">
+
+                        <h3>
+                            Everyone deserves a comfortable
+                            space to be themselves.
+                        </h3>
+
+                        <p>
+
+                            You do not need to look, dress or
+                            express yourself in a particular
+                            way to belong here.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================================================
+                     2. 18+
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="18plus"
+                >
+
+                    <h2>
+                        2. 18+ Only
+                    </h2>
+
+
+                    <p>
+
+                        Crossdresser's Desires is an
+                        adults-only community.
+
+                    </p>
+
+
+                    <p>
+
+                        Members must be at least 18 years
+                        old to create an account, participate
+                        in member activities or access
+                        members-only areas.
+
+                    </p>
+
+
+                    <div class="notice">
+
+                        <strong>
+                            Adults Only
+                        </strong>
+
+                        <p>
+
+                            Do not create an account on
+                            behalf of a person under 18.
+                            Do not upload, request, share or
+                            distribute content involving
+                            anyone under 18.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================================================
+                     3. RESPECT
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="respect"
+                >
+
+                    <h2>
+                        3. Respect For Others
+                    </h2>
+
+
+                    <p>
+
+                        Treat other members as people, not
+                        as objects or assumptions.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Speak to others respectfully.
+                        </li>
+
+                        <li>
+                            Respect different styles,
+                            identities and experiences.
+                        </li>
+
+                        <li>
+                            Do not bully, threaten,
+                            intimidate or harass another
+                            member.
+                        </li>
+
+                        <li>
+                            Do not deliberately humiliate
+                            another person.
+                        </li>
+
+                        <li>
+                            Respect someone's decision when
+                            they do not want to communicate.
+                        </li>
+
+                        <li>
+                            Do not pressure another member
+                            into meeting, sharing information
+                            or participating in an activity.
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!-- ==================================================
+                     4. CONSENT
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="consent"
+                >
+
+                    <h2>
+                        4. Consent
+                    </h2>
+
+
+                    <p>
+
+                        Consent is fundamental to our
+                        community.
+
+                    </p>
+
+
+                    <p>
+
+                        Consent should be freely given,
+                        informed and respected. A person can
+                        change their mind at any time.
+
+                    </p>
+
+
+                    <div class="rule-card">
+
+                        <h3>
+                            No means no.
+                        </h3>
+
+                        <p>
+
+                            If someone does not want to
+                            communicate, meet, participate,
+                            share a photograph or continue an
+                            interaction, respect that decision.
+
+                        </p>
+
+                    </div>
+
+
+                    <p>
+
+                        Consent must never be assumed simply
+                        because someone has created a profile,
+                        attended an event or communicated with
+                        another member.
+
+                    </p>
+
+                </section>
+
+
+                <!-- ==================================================
+                     5. PRIVACY
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="privacy"
+                >
+
+                    <h2>
+                        5. Privacy &amp; Discretion
+                    </h2>
+
+
+                    <p>
+
+                        Privacy is one of the foundations of
+                        Crossdresser's Desires.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Do not share another member's
+                            private information without
+                            permission.
+                        </li>
+
+                        <li>
+                            Do not publish screenshots of
+                            private conversations without
+                            appropriate permission.
+                        </li>
+
+                        <li>
+                            Do not reveal another member's
+                            identity, workplace, address or
+                            personal circumstances.
+                        </li>
+
+                        <li>
+                            Do not photograph or record
+                            another member at an event
+                            without their permission.
+                        </li>
+
+                        <li>
+                            Respect members who choose to
+                            remain private or use a preferred
+                            name.
+                        </li>
+
+                    </ul>
+
+
+                    <p>
+
+                        Members should also take reasonable
+                        steps to protect their own personal
+                        information when interacting online
+                        or meeting people in person.
+
+                    </p>
+
+                </section>
+
+
+                <!-- ==================================================
+                     6. PROFILES
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="profiles"
+                >
+
+                    <h2>
+                        6. Member Profiles
+                    </h2>
+
+
+                    <p>
+
+                        Profiles are intended to help members
+                        introduce themselves and discover
+                        shared interests.
+
+                    </p>
+
+
+                    <p>
+
+                        Please provide information that is
+                        truthful and appropriate for a private
+                        adult community.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Do not impersonate another person.
+                        </li>
+
+                        <li>
+                            Do not create fake profiles to
+                            deceive or manipulate members.
+                        </li>
+
+                        <li>
+                            Do not upload another person's
+                            photographs without permission.
+                        </li>
+
+                        <li>
+                            Do not use someone else's identity
+                            or personal information.
+                        </li>
+
+                        <li>
+                            Keep profile information
+                            respectful and suitable for the
+                            community.
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!-- ==================================================
+                     7. COMMUNICATION
+                     ================================================== -->
+
+                <section
+                    class="guideline-section fade-in"
+                    id="messages"
+                >
+
+              
 
   
