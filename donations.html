@@ -2251,5 +2251,174 @@
     if (yearElement) {
 
         yearElement.textContent =
-            new
+            new Date().getFullYear();
+
+}
+
+
+
+/* ==========================================================
+   MOBILE MENU
+   ========================================================== */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mainNav =
+    document.getElementById("mainNav");
+
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            mainNav.classList.toggle(
+                "active"
+            );
+
+            menuToggle.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+
+    const navLinks =
+        mainNav.querySelectorAll("a");
+
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mainNav.classList.remove(
+                    "active"
+                );
+
+                menuToggle.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+    });
+
+}
+
+
+
+/* ==========================================================
+   SCROLL REVEAL
+   ========================================================== */
+
+const fadeElements =
+    document.querySelectorAll(".fade");
+
+
+if ("IntersectionObserver" in window) {
+
+    const observer =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(
+                    function (entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    fadeElements.forEach(
+        function (element) {
+
+            observer.observe(element);
+
+        }
+    );
+
+}
+else {
+
+    fadeElements.forEach(
+        function (element) {
+
+            element.classList.add(
+                "visible"
+            );
+
+        }
+    );
+
+}
+
+
+
+/* ==========================================================
+   ESCAPE KEY — CLOSE MOBILE MENU
+   ========================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Escape") {
+
+            if (mainNav) {
+
+                mainNav.classList.remove(
+                    "active"
+                );
+
+            }
+
+            if (menuToggle) {
+
+                menuToggle.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+
+    }
+);
+
+
+
+/* ==========================================================
+   PAGE READY
+   ========================================================== */
+
+console.log(
+    "Crossdresser's Desires Donations loaded."
+);
+
+</script></body></html>
             
