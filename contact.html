@@ -2236,6 +2236,519 @@
 
                     A private 18+ lifestyle and community
                     platform for adults in Johannesburg,
-                    the East Rand an
+                    the East Rand and Gauteng.
+
+            </p>
+
+            <p>
+
+                Privacy. Respect. Consent.
+                Discretion always.
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="profiles.html">
+                Profiles
+            </a>
+
+            <a href="experiences.html">
+                Experiences
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Members
+            </h4>
+
+            <a href="membership.html">
+                Membership
+            </a>
+
+            <a href="member/login.html">
+                Member Login
+            </a>
+
+            <a href="member/register.html">
+                Create Account
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Community
+            </h4>
+
+            <a href="future-venue.html">
+                The Desires House
+            </a>
+
+            <a href="donations.html">
+                Support The Vision
+            </a>
+
+            <a href="events.html">
+                Community Events
+            </a>
+
+            <a href="experiences.html">
+                Experiences
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div>
+
+            © <span id="year"></span>
+            Crossdresser's Desires East Rand.
+            All rights reserved.
+
+        </div>
+
+        <div>
+
+            18+ • Privacy • Respect • Consent
+
+        </div>
+
+    </div>
+
+</div>
+
+</footer><script>
+
+    /* ==========================================================
+       MOBILE MENU
+       ========================================================== */
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    if (menuToggle && navLinks) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle(
+                    "active"
+                );
+
+                menuToggle.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+        document
+            .querySelectorAll("#navLinks a")
+            .forEach(function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        navLinks.classList.remove(
+                            "active"
+                        );
+
+                        menuToggle.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+            });
+
+    }
+
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    const yearElement =
+        document.getElementById("year");
+
+    if (yearElement) {
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* ==========================================================
+       SCROLL REVEAL
+       ========================================================== */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".fade-in"
+        );
+
+
+    if (
+        revealElements.length &&
+        "IntersectionObserver" in window
+    ) {
+
+        const observer =
+            new IntersectionObserver(
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        revealElements.forEach(
+            function (element) {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+    } else {
+
+        revealElements.forEach(
+            function (element) {
+
+                element.classList.add(
+                    "visible"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       ESCAPE KEY
+       ========================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                navLinks
+            ) {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+                if (menuToggle) {
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+
+    /* ==========================================================
+       CONTACT FORM
+       ========================================================== */
+
+    const contactForm =
+        document.getElementById(
+            "contactForm"
+        );
+
+    const formResult =
+        document.getElementById(
+            "formResult"
+        );
+
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById(
+                        "name"
+                    )?.value.trim() || "";
+
+
+                const email =
+                    document.getElementById(
+                        "email"
+                    )?.value.trim() || "";
+
+
+                const phone =
+                    document.getElementById(
+                        "phone"
+                    )?.value.trim() || "";
+
+
+                const enquiry =
+                    document.getElementById(
+                        "enquiry"
+                    )?.value || "";
+
+
+                const message =
+                    document.getElementById(
+                        "message"
+                    )?.value.trim() || "";
+
+
+                const consent =
+                    document.getElementById(
+                        "consent"
+                    )?.checked || false;
+
+
+                if (!name) {
+
+                    alert(
+                        "Please enter your name."
+                    );
+
+                    return;
+
+                }
+
+
+                if (!email) {
+
+                    alert(
+                        "Please enter your email address."
+                    );
+
+                    return;
+
+                }
+
+
+                if (!message) {
+
+                    alert(
+                        "Please enter your message."
+                    );
+
+                    return;
+
+                }
+
+
+                if (!consent) {
+
+                    alert(
+                        "Please confirm that you are 18+ and agree to communicate respectfully."
+                    );
+
+                    return;
+
+                }
+
+
+                const subject =
+                    "Crossdresser's Desires Enquiry - " +
+                    enquiry;
+
+
+                const enquiryText =
+                    "Hello Crossdresser's Desires,%0A%0A" +
+                    "Name: " +
+                    encodeURIComponent(name) +
+                    "%0A" +
+                    "Email: " +
+                    encodeURIComponent(email) +
+                    "%0A" +
+                    "WhatsApp / Phone: " +
+                    encodeURIComponent(phone) +
+                    "%0A" +
+                    "Enquiry Type: " +
+                    encodeURIComponent(enquiry) +
+                    "%0A%0A" +
+                    "Message:%0A" +
+                    encodeURIComponent(message);
+
+
+                const whatsappUrl =
+                    "https://wa.me/27836308249?text=" +
+                    enquiryText;
+
+
+                const emailBody =
+                    "Name: " +
+                    name +
+                    "\n" +
+                    "Email: " +
+                    email +
+                    "\n" +
+                    "WhatsApp / Phone: " +
+                    phone +
+                    "\n" +
+                    "Enquiry Type: " +
+                    enquiry +
+                    "\n\n" +
+                    "Message:\n" +
+                    message;
+
+
+                const emailUrl =
+                    "mailto:crossdress.desires@outlook.com" +
+                    "?subject=" +
+                    encodeURIComponent(subject) +
+                    "&body=" +
+                    encodeURIComponent(
+                        emailBody
+                    );
+
+
+                if (formResult) {
+
+                    formResult.innerHTML = `
+
+                        <div
+                            class="result-box"
+                        >
+
+                            <h3>
+                                Your enquiry is ready
+                            </h3>
+
+                            <p>
+                                Choose how you would
+                                like to send your message.
+                            </p>
+
+
+                            <div
+                                class="result-actions"
+                            >
+
+                                <a
+                                    href="${whatsappUrl}"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-primary"
+                                >
+                                    Send via WhatsApp
+                                </a>
+
+
+                                <a
+                                    href="${emailUrl}"
+                                    class="btn btn-outline"
+                                >
+                                    Send via Email
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    `;
+
+                    formResult.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       CONTACT PAGE INITIALISATION
+       ========================================================== */
+
+    console.log(
+        "Crossdresser's Desires Contact loaded."
+    );
+
+</script></body></html>
 
            
