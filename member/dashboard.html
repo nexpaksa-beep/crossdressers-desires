@@ -3312,6 +3312,207 @@
                                 "active"
                             );
 
+                                                        menuToggle.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    if (yearElement) {
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* ==========================================================
+       LOGOUT
+       ========================================================== */
+
+    if (logoutButton) {
+
+        logoutButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmLogout =
+                    confirm(
+                        "Are you sure you want to log out?"
+                    );
+
+                if (confirmLogout) {
+
+                    alert(
+                        "Logout will be connected to the member authentication system when the secure backend is implemented."
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       MANAGE MEMBERSHIP
+       ========================================================== */
+
+    const manageButtons =
+        document.querySelectorAll(
+            ".manage-membership"
+        );
+
+
+    manageButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    alert(
+                        "Membership management will be available once the secure membership and payment system is connected."
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    /* ==========================================================
+       SCROLL REVEAL
+       ========================================================== */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".fade-in"
+        );
+
+
+    if (
+        revealElements.length &&
+        "IntersectionObserver" in window
+    ) {
+
+        const observer =
+            new IntersectionObserver(
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        revealElements.forEach(
+            function (element) {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+    } else {
+
+        revealElements.forEach(
+            function (element) {
+
+                element.classList.add(
+                    "visible"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       ESCAPE KEY
+       ========================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                navLinks
+            ) {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+                if (menuToggle) {
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+
+    /* ==========================================================
+       PAGE INITIALISATION
+       ========================================================== */
+
+    console.log(
+        "Crossdresser's Desires Member Dashboard loaded."
+    );
+
+</script>
+
+
+</body>
+
+</html>
+
                
 
 
