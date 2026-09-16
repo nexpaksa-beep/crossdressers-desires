@@ -1250,4 +1250,1169 @@
                 55px;
 
             border:
+                1px solid
+                var(--border);
+
+            text-align:
+                center;
+
+            background:
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.20
+                );
+
+        }
+
+
+        .privacy-box .icon {
+
+            font-size:
+                36px;
+
+            color:
+                var(--gold);
+
+            margin-bottom:
+                18px;
+
+        }
+
+
+        .privacy-box h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                46px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            margin-bottom:
+                18px;
+
+        }
+
+
+        .privacy-box p {
+
+            color:
+                var(--muted);
+
+            max-width:
+                700px;
+
+            margin:
+                0 auto 15px;
+
+            font-size:
+                14px;
+
+        }
+
+
+        /* =========================================================
+           HOW IT WORKS
+           ========================================================= */
+
+        .steps {
+
+            background:
+                var(--black);
+
+        }
+
+
+        .step-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                25px;
+
+            counter-reset:
+                steps;
+
+        }
+
+
+        .step {
+
+            position:
+                relative;
+
+            padding:
+                35px 30px 35px 80px;
+
+            border-top:
+                1px solid
+                var(--border);
+
+        }
+
+
+        .step-number {
+
+            position:
+                absolute;
+
+            left:
+                0;
+
+            top:
+                28px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                48px;
+
+            color:
+                var(--gold);
+
+            line-height:
+                1;
+
+        }
+
+
+        .step h3 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                29px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .step p {
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =========================================================
+           FAQ
+           ========================================================= */
+
+        .faq {
+
+            background:
+                var(--black-soft);
+
+        }
+
+
+        .faq-list {
+
+            max-width:
+                850px;
+
+            margin:
+                auto;
+
+        }
+
+
+        .faq-item {
+
+            border-bottom:
+                1px solid
+                rgba(
+                    216,
+                    176,
+                    106,
+                    0.14
+                );
+
+        }
+
+
+        .faq-question {
+
+            width:
+                100%;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            gap:
+                20px;
+
+            padding:
+                24px 0;
+
+            border:
+                0;
+
+            background:
+                transparent;
+
+            color:
+                var(--cream);
+
+            text-align:
+                left;
+
+            cursor:
+                pointer;
+
+            font-size:
+                14px;
+
+            font-weight:
+                500;
+
+        }
+
+
+        .faq-question span:last-child {
+
+            color:
+                var(--gold);
+
+            font-size:
+                22px;
+
+            transition:
+                0.3s ease;
+
+        }
+
+
+        .faq-answer {
+
+            max-height:
+                0;
+
+            overflow:
+                hidden;
+
+            transition:
+                max-height
+                0.35s
+                ease;
+
+        }
+
+
+        .faq-answer p {
+
+            padding:
+                0 40px 22px 0;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        .faq-item.active
+        .faq-answer {
+
+            max-height:
+                300px;
+
+        }
+
+
+        .faq-item.active
+        .faq-question span:last-child {
+
+            transform:
+                rotate(45deg);
+
+        }
+
+
+        /* =========================================================
+           FINAL CTA
+           ========================================================= */
+
+        .final-cta {
+
+            padding:
+                110px 0;
+
+            text-align:
+                center;
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    rgba(
+                        92,
+                        24,
+                        56,
+                        0.55
+                    ),
+                    transparent 60%
+                ),
+
+                var(--black);
+
+        }
+
+
+        .final-cta h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                clamp(
+                    48px,
+                    7vw,
+                    76px
+                );
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            line-height:
+                0.95;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .final-cta p {
+
+            max-width:
+                650px;
+
+            margin:
+                0 auto 30px;
+
+            color:
+                var(--muted);
+
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+
+            padding:
+                65px 0 25px;
+
+            background:
+                #0b080c;
+
+            border-top:
+                1px solid
+                rgba(
+                    216,
+                    176,
+                    106,
+                    0.12
+                );
+
+        }
+
+
+        .footer-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.5fr
+                1fr
+                1fr;
+
+            gap:
+                50px;
+
+            padding-bottom:
+                45px;
+
+        }
+
+
+        .footer-brand h2 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size:
+                34px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--gold-light);
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .footer-brand p {
+
+            max-width:
+                420px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+        }
+
+
+        .footer-column h3 {
+
+            color:
+                var(--gold);
+
+            font-size:
+                10px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                18px;
+
+        }
+
+
+        .footer-column a {
+
+            display:
+                block;
+
+            color:
+                var(--muted);
+
+            font-size:
+                12px;
+
+            margin-bottom:
+                10px;
+
+            transition:
+                0.3s ease;
+
+        }
+
+
+        .footer-column a:hover {
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .footer-bottom {
+
+            padding-top:
+                22px;
+
+            border-top:
+                1px solid
+                rgba(
+                    216,
+                    176,
+                    106,
+                    0.08
+                );
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            color:
+                #8e8288;
+
+            font-size:
+                10px;
+
+        }
+
+
+        /* =========================================================
+           ANIMATION
+           ========================================================= */
+
+        .fade {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(20px);
+
+            transition:
+                opacity
+                0.7s
+                ease,
+                transform
+                0.7s
+                ease;
+
+        }
+
+
+        .fade.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+
+        @media (
+            max-width: 1000px
+        ) {
+
+            .nav-links {
+
+                gap:
+                    14px;
+
+            }
+
+
+            .benefit-grid,
+            .step-grid {
+
+                grid-template-columns:
+                    repeat(
+                        2,
+                        1fr
+                    );
+
+            }
+
+
+            .membership-layout {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+        }
+
+
+        @media (
+            max-width: 780px
+        ) {
+
+            .section {
+
+                padding:
+                    75px 0;
+
+            }
+
+
+            .menu-toggle {
+
+                display:
+                    block;
+
+            }
+
+
+            .nav-links {
+
+                position:
+                    absolute;
+
+                top:
+                    82px;
+
+                left:
+                    0;
+
+                right:
+                    0;
+
+                display:
+                    none;
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                gap:
+                    0;
+
+                background:
+                    rgba(
+                        16,
+                        11,
+                        18,
+                        0.98
+                    );
+
+                border-bottom:
+                    1px solid
+                    var(--border);
+
+            }
+
+
+            .nav-links.open {
+
+                display:
+                    flex;
+
+            }
+
+
+            .nav-links a {
+
+                padding:
+                    16px 5%;
+
+                border-bottom:
+                    1px solid
+                    rgba(
+                        216,
+                        176,
+                        106,
+                        0.08
+                    );
+
+            }
+
+
+            .nav-join {
+
+                border:
+                    0 !important;
+
+            }
+
+
+            .hero {
+
+                min-height:
+                    570px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    clamp(
+                        55px,
+                        16vw,
+                        82px
+                    );
+
+            }
+
+
+            .membership-card {
+
+                padding:
+                    45px 25px;
+
+            }
+
+
+            .benefit-grid,
+            .step-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .privacy-box {
+
+                padding:
+                    40px 25px;
+
+            }
+
+
+            .privacy-box h2 {
+
+                font-size:
+                    40px;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    35px;
+
+            }
+
+
+            .footer-bottom {
+
+                flex-direction:
+                    column;
+
+            }
+
+        }
+
+
+        @media (
+            max-width: 480px
+        ) {
+
+            .brand-main {
+
+                font-size:
+                    25px;
+
+            }
+
+
+            .brand-sub {
+
+                font-size:
+                    8px;
+
+                letter-spacing:
+                    2px;
+
+            }
+
+
+            .hero p {
+
+                font-size:
+                    14px;
+
+            }
+
+
+            .price {
+
+                font-size:
+                    70px;
+
+            }
+
+
+            .btn {
+
+                width:
+                    100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+    <div class="container nav">
+
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-main">
+                Crossdresser's Desires
+            </span>
+
+            <span class="brand-sub">
+                East Rand • Gauteng
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="profiles.html">
+                Profiles
+            </a>
+
+            <a href="experiences.html">
+                Experiences
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="membership.html">
+                Membership
+            </a>
+
+            <a href="member/login.html">
+                Login
+            </a>
+
+            <a
+                href="member/register.html"
+                class="nav-join"
+            >
+                Join — R199
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero">
+
+    <div class="container hero-content fade">
+
+        <div class="eyebrow">
+            Become Part Of The Community
+        </div>
+
+        <h1>
+            Membership
+        </h1>
+
+        <p>
+            A private 18+ community created for adults
+            who want somewhere welcoming, discreet and
+            respectful to express themselves, connect
+            with others and explore their feminine side.
+        </p>
+
+        <div class="hero-note">
+            ♡ 18+ &nbsp;•&nbsp; Private &nbsp;•&nbsp;
+            Discreet &nbsp;•&nbsp; Inclusive
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEMBERSHIP
+     ========================================================= -->
+
+<section class="section membership-area">
+
+    <div class="container">
+
+        <div class="section-heading fade">
+
+            <div class="small-title">
+                Founding Membership
+            </div>
+
+            <h2>
+                Your Place In The Community
+            </h2>
+
+            <p>
+                Membership is designed to give adults a
+                private doorway into the Crossdresser's
+                Desires community.
+            </p>
+
+        </div>
+
+
+        <div class="membership-layout">
+
+
+            <div class="membership-copy fade">
+
+                <h3>
+                    More Than A Membership.
+                    A Sense Of Belonging.
+                </h3>
+
+                <p>
+                    Crossdresser's Desires is being created
+                    as a community where you don't have to
+                    explain yourself or hide who you are.
+                </p>
+
+                <p>
+                    Whether you are just beginning your
+                    journey or have been expressing your
+                    feminine side for years, you can connect
+                    with other adults who understand.
+                </p>
+
+
+                <ul class="membership-list">
+
+                    <li>
+                        Access to the private member community
+                    </li>
+
+                    <li>
+                        Create your own member profile
+                    </li>
+
+                    <li>
+                        Share your interests, style and journey
+                    </li>
+
+                    <li>
+                        Discover community profiles
+                    </li>
+
+                    <li>
+                        Member-only events and experiences
+                    </li>
+
+                    <li>
+                        Early access to selected future experiences
+                    </li>
+
+                    <li>
+                        Help shape the future of the community
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    Membership is intended for adults aged
+                    18 and over. Respect, consent, privacy
+                    and personal boundaries are fundamental
+                    to the community.
+                </p>
+
+            </div>
+
+
+
+            <div class="membership-card fade">
+
+                <div class="card-label">
+                    Monthly Membership
+                </div>
+
+                <div class="price">
+                    R199
+                </div>
+
+                <div class="price-period">
+                    per month
+                </div>
+
+                <div class="card-description">
+                    Become part of the beginning of
+                    Crossdresser's Desires.
+                </div>
+
+                <a
+                    href="member/register.html"
+                    class="btn btn-primary"
+                >
+                    Create Your Account
+                </a>
+
+                <div class="card-note">
+                    18+ only • Membership terms apply
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     BENEFITS
+     ========================================================= -->
+
+<section class="section benefits">
+
+    <div class="container">
+
+        <div class="section-heading fade">
+
+            <div class="small-title">
+                Membership Benefits
+            </div>
+
+            <h2>
+                What Membership Opens Up
+            </h2>
+
+            <p>
+                The community will grow alongside its members,
+                with new features and experiences introduced
+                over time.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-grid">
+
+
+            <article class="benefit fade">
+
+                <div class="benefit-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Your Profile
+                </h3>
+
+                <p>
+                    Create a profile using the name you
+                    choose to share with the community.
+                    Tell people about your interests,
+                    style and journey.
+                </p>
+
+            </article>
+
+
+            <article class="benefit fade">
+
+                <div class="benefit-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Community
+                </h3>
+
+                <p>
+                    Discover other adults with shared
+                    interests and connect through a
+                    respectful private community.
+                </p>
+
+            </article>
+
+
+ 
            
