@@ -3238,7 +3238,190 @@
                 <div>
 
                     ©
-                    <span i
+                    <span id="year"></span>
+                Crossdresser's Desires East Rand.
+                All rights reserved.
+
+            </div>
+
+            <div>
+
+                18+
+                •
+                Privacy
+                •
+                Respect
+                •
+                Consent
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    /* ==========================================================
+       MOBILE MENU
+       ========================================================== */
+
+    const menuToggle =
+        document.getElementById(
+            "menuToggle"
+        );
+
+    const nav =
+        document.getElementById(
+            "mainNav"
+        );
+
+    if (menuToggle && nav) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                nav.classList.toggle(
+                    "open"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    const year =
+        document.getElementById(
+            "year"
+        );
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* ==========================================================
+       SCROLL REVEAL
+       ========================================================== */
+
+    const fadeElements =
+        document.querySelectorAll(
+            ".fade"
+        );
+
+    if (
+        "IntersectionObserver"
+        in window
+    ) {
+
+        const observer =
+            new IntersectionObserver(
+                function (
+                    entries,
+                    observer
+                ) {
+
+                    entries.forEach(
+                        function (
+                            entry
+                        ) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        fadeElements.forEach(
+            function (element) {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+    } else {
+
+        fadeElements.forEach(
+            function (element) {
+
+                element.classList.add(
+                    "visible"
+                );
+
+            }
+
+        );
+
+    }
+
+
+    /* ==========================================================
+       ESCAPE KEY
+       ========================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape"
+                && nav
+            ) {
+
+                nav.classList.remove(
+                    "open"
+                );
+
+            }
+
+        }
+    );
+
+
+    /* ==========================================================
+       EXPERIENCES PAGE
+       ========================================================== */
+
+    console.log(
+        "Crossdresser's Desires Experiences loaded."
+    );
+
+</script>
+
+</body></html>
   
 
       
