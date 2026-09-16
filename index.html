@@ -1,1 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Crossdresser's Desires East Rand | Private 18+ Community
+    </title>
+
+    <meta
+        name="description"
+        content="Crossdresser's Desires East Rand is a private 18+ lifestyle and community platform for crossdressers in Johannesburg, the East Rand and Gauteng. Discover transformation experiences, styling, social events and future weekend retreats."
+    >
+
+    <meta
+        name="keywords"
+        content="crossdressers Johannesburg, crossdresser East Rand, crossdressing Gauteng, crossdresser community South Africa, transformation experience Johannesburg, crossdresser events Gauteng"
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <meta
+        property="og:title"
+        content="Crossdresser's Desires East Rand"
+    >
+
+    <meta
+        property="og:description"
+        content="A private, discreet 18+ community and lifestyle experience for crossdressers in Johannesburg, East Rand and Gauteng."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        name="theme-color"
+        content="#100b12"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =========================================================
+           CROSSDRESSER'S DESIRES
+           MAIN WEBSITE STYLES
+        ========================================================= */
+
+        :root {
+            --black: #100b12;
+            --black-soft: #171017;
+            --burgundy: #5c1838;
+            --burgundy-dark: #351021;
+            --rose: #b65c7d;
+            --gold: #d8b06a;
+            --gold-light: #f1d99b;
+            --cream: #f7f0e8;
+            --white: #ffffff;
+            --muted: #c9bcc2;
+            --border: rgba(216, 176, 106, 0.25);
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: 0 auto;
+        }
+
+        .serif {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(16, 11, 18, 0.88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(216, 176, 106, 0.15);
+        }
+
+        .nav {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .brand-name {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--gold-light);
+            letter-spacing: 0.5px;
+        }
+
+        .brand-location {
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: #eee5e9;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-join {
+            border: 1px solid var(--gold);
+            color: var(--gold-light) !important;
+            padding: 11px 18px;
+            border-radius: 30px;
+        }
+
+        .nav-join:hover {
+            background: var(--gold);
+            color: var(--black) !important;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--gold-light);
+            padding: 9px 12px;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 140px 0 90px;
+            background:
+                radial-gradient(
+                    circle at 75% 25%,
+                    rgba(182, 92, 125, 0.18),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 20% 80%,
+                    rgba(216, 176, 106, 0.08),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #100b12 0%,
+                    #21111b 48%,
+                    #100b12 100%
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(16, 11, 18, 0.98) 0%,
+                    rgba(16, 11, 18, 0.78) 45%,
+                    rgba(16, 11, 18, 0.2) 100%
+                );
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 760px;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(58px, 10vw, 105px);
+            line-height: 0.88;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 28px;
+        }
+
+        .hero h1 span {
+            display: block;
+            color: var(--gold-light);
+            font-style: italic;
+        }
+
+        .hero-subtitle {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(23px, 3vw, 34px);
+            line-height: 1.2;
+            color: #eadfe3;
+            max-width: 680px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            color: var(--muted);
+            max-width: 650px;
+            font-size: 15px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 25px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(
+                135deg,
+                var(--gold-light),
+                var(--gold)
+            );
+            color: var(--black);
+            box-shadow: 0 10px 30px rgba(216, 176, 106, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(216, 176, 106, 0.3);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--gold);
+            color: var(--gold-light);
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--black);
+        }
+
+        .hero-note {
+            margin-top: 28px;
+            color: #a99da3;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        /* =========================================================
+           SECTION BASICS
+        ========================================================= */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin-bottom: 50px;
+        }
+
+        .section-label {
+            color: var(--gold);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 700;
+            margin-bottom: 13px;
+        }
+
+        .section-heading h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(42px, 6vw, 66px);
+            line-height: 1;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 18px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 15px;
+            max-width: 680px;
+        }
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .intro {
+            background: var(--black-soft);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .intro-copy p {
+            color: #cfc3c8;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        .intro-quote {
+            padding: 40px;
+            border: 1px solid var(--border);
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(92, 24, 56, 0.25),
+                    rgba(16, 11, 18, 0.9)
+                );
+            box-shadow: var(--shadow);
+        }
+
+        .intro-quote .quote {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 35px;
+            line-height: 1.15;
+            color: var(--gold-light);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .intro-quote p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================================================
+           EXPERIENCE CARDS
+        ========================================================= */
+
+        .experience {
+            background: #120c12;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            min-height: 245px;
+            padding: 30px;
+            border: 1px solid rgba(216, 176, 106, 0.16);
+            background: linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.045),
+                rgba(255, 255, 255, 0.015)
+            );
+            transition: 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(216, 176, 106, 0.5);
+            background: rgba(92, 24, 56, 0.18);
+        }
+
+        .card-number {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--gold);
+            font-size: 25px;
+            margin-bottom: 22px;
+        }
+
+        .card h3 {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--cream);
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================================================
+           MEMBERSHIP
+        ========================================================= */
+
+        .membership {
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(92, 24, 56, 0.35),
+                    transparent 55%
+                ),
+                var(--black);
+        }
+
+        .membership-box {
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.025);
+            padding: 60px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .membership-price {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 75px;
+            line-height: 1;
+            color: var(--gold-light);
+            margin: 20px 0 5px;
+        }
+
+        .membership-price small {
+            font-family: "Montserrat", sans-serif;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .membership-subtitle {
+            color: #d5c9ce;
+            margin-bottom: 28px;
+        }
+
+        .benefits {
+            max-width: 650px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            text-align: left;
+        }
+
+        .benefit {
+            padding: 14px;
+            border-bottom: 1px solid rgba(216, 176, 106, 0.12);
+            color: #d8cdd2;
+            font-size: 13px;
+        }
+
+        .benefit span {
+            color: var(--gold);
+            margin-right: 8px;
+        }
+
+        /* =========================================================
+           FUTURE VENUE
+        ========================================================= */
+
+        .future {
+            background: var(--black-soft);
+        }
+
+        .future-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .future-copy p {
+            color: var(--muted);
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        .venue-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .venue-item {
+            padding: 20px;
+            border: 1px solid rgba(216, 176, 106, 0.15);
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .venue-item strong {
+            display: block;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 4px;
+        }
+
+        .venue-item span {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        /* =========================================================
+           DONATIONS
+        ========================================================= */
+
+        .donate {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--burgundy-dark),
+                    #140c12
+                );
+        }
+
+        .donate-box {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .donate-box h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(44px, 6vw, 68px);
+            font-weight: 500;
+            line-height: 1;
+            color: var(--cream);
+            margin-bottom: 20px;
+        }
+
+        .donate-box p {
+            color: #d4c4cb;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            font-size: 14px;
+        }
+
+        .donation-note {
+            margin-top: 18px;
+            font-size: 11px;
+            color: #a9969f;
+        }
+
+        /* =========================================================
+           PRIVACY
+        ========================================================= */
+
+        .privacy-strip {
+            padding: 45px 0;
+            background: #0c090d;
+            border-top: 1px solid rgba(216, 176, 106, 0.1);
+            border-bottom: 1px solid rgba(216, 176, 106, 0.1);
+        }
+
+        .privacy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .privacy-item {
+            text-align: center;
+        }
+
+        .privacy-item strong {
+            display: block;
+            color: var(--gold-light);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 25px;
+            margin-bottom: 4px;
+        }
+
+        .privacy-item span {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding: 60px 0 25px;
+            background: #09070a;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 50px;
+            padding-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--gold-light);
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer-description {
+            color: #9f9299;
+            font-size: 12px;
+            max-width: 400px;
+        }
+
+        .footer-column h4 {
+            color: var(--cream);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #9f9299;
+            font-size: 12px;
+            margin-bottom: 9px;
+            transition: 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            padding-top: 20px;
+            color: #71666d;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .adult-notice {
+            color: var(--gold);
+        }
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 850px) {
+
+            .nav {
+                min-height: 70px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                flex-direction: column;
+                align-items: stretch;
+                background: rgba(16, 11, 18, 0.98);
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 12px;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding-top: 125px;
+            }
+
+            .intro-grid,
+            .future-grid {
+                grid-template-columns: 1fr;
+            }
+
+       
