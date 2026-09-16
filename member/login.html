@@ -2265,6 +2265,508 @@
             <div class="footer-column">
 
                 <h3>
-                    Members
+                                        Members
+                </h3>
+
+                <a href="../membership.html">
+                    Membership
+                </a>
+
+                <a href="login.html">
+                    Member Login
+                </a>
+
+                <a href="register.html">
+                    Create Account
+                </a>
+
+                <a href="../contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+                <a href="../privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="../terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="../community-guidelines.html">
+                    Community Guidelines
+                </a>
+
+                <a href="../future-venue.html">
+                    The Desires House
+                </a>
+
+                <a href="../donations.html">
+                    Support The Vision
+                </a>
+
+                <a href="../faq.html">
+                    FAQ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                ©
+                <span id="year"></span>
+                Crossdresser's Desires East Rand.
+                All rights reserved.
+            </p>
+
+            <p>
+                18+ • Privacy • Respect • Consent
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ==============================================================
+     JAVASCRIPT
+     ============================================================== -->
+
+<script>
+
+    /* ==========================================================
+       MOBILE MENU
+       ========================================================== */
+
+    const menuToggle =
+        document.querySelector(
+            ".menu-toggle"
+        );
+
+    const navLinks =
+        document.querySelector(
+            ".nav-links"
+        );
+
+
+    if (
+        menuToggle &&
+        navLinks
+    ) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                const isOpen =
+                    navLinks.classList.toggle(
+                        "active"
+                    );
+
+                menuToggle.classList.toggle(
+                    "active"
+                );
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+            }
+        );
+
+
+        navLinks
+            .querySelectorAll("a")
+            .forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            navLinks.classList.remove(
+                                "active"
+                            );
+
+                            menuToggle.classList.remove(
+                                "active"
+                            );
+
+                            menuToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    }
+
+
+    /* ==========================================================
+       CURRENT YEAR
+       ========================================================== */
+
+    const yearElement =
+        document.getElementById(
+            "year"
+        );
+
+
+    if (yearElement) {
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* ==========================================================
+       PASSWORD VISIBILITY
+       ========================================================== */
+
+    const passwordInput =
+        document.getElementById(
+            "password"
+        );
+
+    const passwordToggle =
+        document.getElementById(
+            "passwordToggle"
+        );
+
+
+    if (
+        passwordInput &&
+        passwordToggle
+    ) {
+
+        passwordToggle.addEventListener(
+            "click",
+            function () {
+
+                const isPassword =
+                    passwordInput.type ===
+                    "password";
+
+
+                passwordInput.type =
+                    isPassword
+                        ? "text"
+                        : "password";
+
+
+                const icon =
+                    passwordToggle.querySelector(
+                        "i"
+                    );
+
+
+                if (icon) {
+
+                    icon.className =
+                        isPassword
+                            ? "fa-solid fa-eye-slash"
+                            : "fa-solid fa-eye";
+
+                }
+
+
+                passwordToggle.setAttribute(
+                    "aria-label",
+                    isPassword
+                        ? "Hide password"
+                        : "Show password"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       LOGIN FORM
+       ========================================================== */
+
+    const loginForm =
+        document.getElementById(
+            "loginForm"
+        );
+
+
+    if (loginForm) {
+
+        loginForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const email =
+                    document.getElementById(
+                        "email"
+                    ).value.trim();
+
+
+                const password =
+                    document.getElementById(
+                        "password"
+                    ).value;
+
+
+                const rememberMe =
+                    document.getElementById(
+                        "rememberMe"
+                    ).checked;
+
+
+                if (
+                    !email ||
+                    !password
+                ) {
+
+                    alert(
+                        "Please enter your email address and password."
+                    );
+
+                    return;
+
+                }
+
+
+                const emailPattern =
+                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+                if (
+                    !emailPattern.test(
+                        email
+                    )
+                ) {
+
+                    alert(
+                        "Please enter a valid email address."
+                    );
+
+                    return;
+
+                }
+
+
+                if (
+                    password.length < 8
+                ) {
+
+                    alert(
+                        "Please enter your complete password."
+                    );
+
+                    return;
+
+                }
+
+
+                /*
+                 * FRONT-END PLACEHOLDER
+                 *
+                 * Real authentication will be connected
+                 * after the backend and member database
+                 * have been implemented.
+                 */
+
+                alert(
+                    "Login details received.\n\n" +
+                    "Secure member authentication will be connected in the next stage."
+                );
+
+
+                console.log(
+                    "Login attempt:",
+                    {
+                        email:
+                            email,
+
+                        rememberMe:
+                            rememberMe
+                    }
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       FORGOT PASSWORD
+       ========================================================== */
+
+    const forgotPassword =
+        document.getElementById(
+            "forgotPassword"
+        );
+
+
+    if (forgotPassword) {
+
+        forgotPassword.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+
+                alert(
+                    "Password recovery will be connected when secure member authentication is implemented."
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       SCROLL REVEAL
+       ========================================================== */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".fade-in"
+        );
+
+
+    if (
+        revealElements.length &&
+        "IntersectionObserver" in window
+    ) {
+
+        const observer =
+            new IntersectionObserver(
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold:
+                        0.12
+                }
+            );
+
+
+        revealElements.forEach(
+            function (element) {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+    } else {
+
+        revealElements.forEach(
+            function (element) {
+
+                element.classList.add(
+                    "visible"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* ==========================================================
+       ESCAPE KEY
+       ========================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                navLinks
+            ) {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+                if (menuToggle) {
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+
+    /* ==========================================================
+       PAGE INITIALISATION
+       ========================================================== */
+
+    console.log(
+        "Crossdresser's Desires Member Login loaded."
+    );
+
+</script>
+
+
+</body>
+
+</html>
     
              
