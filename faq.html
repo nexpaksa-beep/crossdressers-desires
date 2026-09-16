@@ -3571,6 +3571,140 @@
                         }
                     );
 
+                    }
+);
+
+                if (!isOpen) {
+
+                    item.classList.add(
+                        "active"
+                    );
+
+                    question.setAttribute(
+                        "aria-expanded",
+                        "true"
+                    );
+
+                }
+
+            }
+        );
+
+
+
+
+/* ==========================================================
+   SCROLL REVEAL
+   ========================================================== */
+
+const revealElements =
+    document.querySelectorAll(
+        ".fade-in"
+    );
+
+
+if (
+    revealElements.length &&
+    "IntersectionObserver" in window
+) {
+
+    const observer =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(
+                    function (entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(
+        function (element) {
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
+
+} else {
+
+    revealElements.forEach(
+        function (element) {
+
+            element.classList.add(
+                "visible"
+            );
+
+        }
+    );
+
+}
+
+
+/* ==========================================================
+   ESCAPE KEY
+   ========================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (
+            event.key === "Escape" &&
+            navLinks
+        ) {
+
+            navLinks.classList.remove(
+                "active"
+            );
+
+            if (menuToggle) {
+
+                menuToggle.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+
+    }
+);
+
+
+/* ==========================================================
+   PAGE INITIALISATION
+   ========================================================== */
+
+console.log(
+    "Crossdresser's Desires FAQ loaded."
+);
+
+</script></body></html>
+
     
 
                             
